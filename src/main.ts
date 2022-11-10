@@ -5,7 +5,7 @@ const app = express();
 const tareasBuscar = Router();
 let lista: string[];
 
-lista = ['Escribir', 'Estudiar'];
+lista = ['Escribir', 'Trotar', 'Jugar'];
 
 app.get('/', (req: Request, res: Response) => {
 	res.send(lista);
