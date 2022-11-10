@@ -1,22 +1,37 @@
 {
-  "name": "cp11023-dsi-instructoria-2",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "tsc && node dist/main.js",
-    "build":"tsc"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/cheverriaw21/cp11023-dsi-instructoria-2.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/cheverriaw21/cp11023-dsi-instructoria-2/issues"
-  },
-  "homepage": "https://github.com/cheverriaw21/cp11023-dsi-instructoria-2#readme"
+	"name": "cp11023-dsi-instructoria-2",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "tsc && node dist/main.js",
+		"build": "tsc",
+		"format": "prettier --write ."
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/cheverriaw21/cp11023-dsi-instructoria-2.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/cheverriaw21/cp11023-dsi-instructoria-2/issues"
+	},
+	"homepage": "https://github.com/cheverriaw21/cp11023-dsi-instructoria-2#readme",
+	"dependencies": {
+		"eslint-config-airbnb-base-typescript": "^1.1.0"
+	},
+	"devDependencies": {
+		"@typescript-eslint/eslint-plugin": "^5.42.1",
+		"eslint": "^8.27.0",
+		"eslint-config-prettier": "^8.5.0",
+		"eslint-config-standard-with-typescript": "^23.0.0",
+		"eslint-plugin-import": "^2.26.0",
+		"eslint-plugin-n": "^15.5.1",
+		"eslint-plugin-promise": "^6.1.1",
+		"prettier": "^2.7.1",
+		"typescript": "^4.8.4"
+	}
 }
