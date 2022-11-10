@@ -46,7 +46,7 @@ tareasBuscar.get('/:palabra', (req: Request, res: Response) => {
 });
 
 app.use('/tareas', tareasRoutes);
-app.use('/search', tareasBuscar);
+app.use('/tareas/search', tareasBuscar);
 
 process.env.PORT
 	? console.log('localhost:' + process.env.PORT)
