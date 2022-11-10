@@ -27,10 +27,12 @@ app.post('/:param', (req: Request, res: Response) => {
 	res.status(201).send(lista);
 });
 
-//Buscar Tarea
+//Buscar Tarea, no importa minusculas o mayusculas
 tareasBuscar.get('/:palabra', (req: Request, res: Response) => {
 	const { palabra } = req.params;
-	const result = lista.filter(valor => valor == palabra);
+	const result = lista.filter(
+		valor => valor.toLowerCase() == palabra.toLowerCase()
+	);
 	console.info(result);
 	res.status(201).send(result);
 });
